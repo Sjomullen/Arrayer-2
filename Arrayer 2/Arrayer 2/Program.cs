@@ -12,7 +12,12 @@ namespace Arrayer_2
         static double Average(double[] a)
         {
             double summa = 0;
-
+            for(int i = 0; i < a.Length; i++)
+            {
+                summa += a[i];
+            }
+            double Average = summa / a.Length;
+            return (Math.Round(Average, 1));
         }
     }
 }
